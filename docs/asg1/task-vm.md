@@ -48,7 +48,7 @@ However, if you cannot find solutions after you try all approaches you can think
 
 ## Download an ISO image of Linux Ubuntu
 
-You can download the Ubuntu Server 24.04.1 LTS install image for a 64-bit machine from [here](https://download.nus.edu.sg/mirror/ubuntu-releases/24.04/ubuntu-24.04.1-live-server-amd64.iso) or from [Ubuntu's official website](https://ubuntu.com/download/server).
+You can download the Ubuntu Server 25.10 LTS install image for a 64-bit machine from [here](https://download.nus.edu.sg/mirror/ubuntu-releases/24.04/ubuntu-24.04.1-live-server-amd64.iso) or from [Ubuntu's official website](https://ubuntu.com/download/server).
 
 ## Create and launch a virtual machine
 
