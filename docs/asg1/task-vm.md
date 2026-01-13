@@ -48,7 +48,7 @@ However, if you cannot find solutions after you try all approaches you can think
 
 ## Download an ISO image of Linux Ubuntu
 
-You can download the Ubuntu Server 25.10 LTS install image for a 64-bit machine from [here](https://download.nus.edu.sg/mirror/ubuntu-releases/24.04/ubuntu-24.04.1-live-server-amd64.iso) or from [Ubuntu's official website](https://ubuntu.com/download/server).
+You can download the Ubuntu Server 24.04.3 LTS install image for a 64-bit machine from [here](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/24.04/ubuntu-24.04.3-live-server-amd64.iso) or from [Ubuntu's official website](https://ubuntu.com/download/server).
 
 ## Create and launch a virtual machine
 
@@ -252,7 +252,6 @@ To achieve this, you will need to modify the network settings of the VM and conf
 !!! question
 
     Whenever you log in to the VM, either locally through the console or remotely via SSH, the system authenticates you using your password or SSH key.
-    These login activities are recorded in the system log file located at `/var/log/auth.log`.
     Locate the log entries that record your successful login to the system **via SSH**, take a screenshot of the relevant section of the log, and highlight on the screenshot:
 
     - Which part of the log indicates the login activity occurred via SSH.

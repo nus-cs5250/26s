@@ -31,7 +31,7 @@ To work with Linux kernel sources and perform tasks such as generating a patch, 
 Use the following command to clone the repository:
 
 ```bash
-git clone https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git --depth 1 --branch v6.18
+git clone https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git --depth 1 --branch v6.18.4
 ```
 
 Here's what each option does:
@@ -185,8 +185,8 @@ Please note:
   You can add suffix to the kernel release version by updating `LOCALVERSION` in the kernel config to identify your kernel images.
   Use the search function of `menuconfig` to find where to modify the option.
 - To check if the VM has successfully booted up, verify that the VM reaches the same login screen as your original kernel.
-- Your goal is to reduce the size of the kernel image (`./arch/x86/boot/bzImage`) to no larger than 8 MiB (8388608 bytes).
-  You'll get at least 2 marks if the kernel image is smaller than 10 MiB and full marks if it's smaller than 8 MiB.
+- Your goal is to reduce the size of the kernel image (`./arch/x86/boot/bzImage`) to no larger than 9.8 MiB.
+  You'll get at least 2 marks if the kernel image is smaller than 10 MiB and full marks if it's smaller than 9.8 MiB.
   There's no need to shrink it excessively.
 
 !!! info
