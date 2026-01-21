@@ -4,8 +4,8 @@
 
       Please read the [general instructions](../index.md) first.
 
-      Part A of the assignment is due **17:59 on 17 Feb 2025**.
-      Part B of the assignment is due **17:59 on 10 Feb 2025**.
+      Part A of the assignment is due **23:59 on 17 Feb 2026**.
+      Part B of the assignment is due **23:59 on 10 Feb 2026**.
       Late submissions will lose **1 mark per hour**.
 
 !!! info
@@ -13,7 +13,7 @@
       These assignments are designed under the assumption that you are using an x86-64 machine.
       If you do not have access to a machine based on the x86 architecture, you have the option to request a server for your use.
       To proceed with a server request, please complete and submit
-      [this form](https://canvas.nus.edu.sg/courses/70149/quizzes/56106).
+      [this form](https://canvas.nus.edu.sg/courses/85677/quizzes/78579).
       However, in order to ensure the efficient use of resources, we kindly ask that you request a server only if there are no other viable alternatives.
 
 ## Part A (35 marks)
@@ -136,4 +136,4 @@ Then, proceed to complete the tasks and push your work to GitHub accordingly.
 
 ## Part B (15 marks)
 
-Please complete the quiz [Assignment 1 (Part B)](https://canvas.nus.edu.sg/courses/70149/quizzes/56514) on Canvas.
+Please complete the quiz [Assignment 1 (Part B)](https://canvas.nus.edu.sg/courses/85677/quizzes/79113) on Canvas.
