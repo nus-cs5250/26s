@@ -91,7 +91,7 @@ Please choose ONE of the options above first and then provide a brief explanatio
 ### Submission Guidelines
 
 Please accept the assignment on GitHub Classroom first.
-The invitation link is available on [Canvas](https://canvas.nus.edu.sg/courses/70149/assignments/166038).
+The invitation link is available on [Canvas](https://canvas.nus.edu.sg/courses/85677/assignments/235737).
 Then, proceed to complete the tasks and push your work to GitHub accordingly.
 
 **For all of the following assignments** (we will not repeat this every time):
@@ -121,7 +121,7 @@ Then, proceed to complete the tasks and push your work to GitHub accordingly.
 
 **For this assignment:**
 
-1. For Qn5, the DEB package should be uploaded on [Canvas](https://canvas.nus.edu.sg/courses/70149/assignments/166038) and a checksum of the DEB package should be provided in the Git repository.
+1. For Qn5, the DEB package should be uploaded on [Canvas](https://canvas.nus.edu.sg/courses/85677/assignments/235737) and a checksum of the DEB package should be provided in the Git repository.
    You can create the checksum using the script `task2/generate_checksum` in the repository.
 
    - **Plase Do NOT commit / push the DEB package to this repository.**
