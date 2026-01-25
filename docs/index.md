@@ -16,7 +16,7 @@ Each assignment will have two parts, i.e.,
 - Part A (35 marks): some hands-on practice to make you explore aspects about Linux kernel.
 - Part B (15 marks): some exercises that test your understanding on the topics covered in the lectures.
 
-Assignments are always due at 17:59 on some Monday (Singapore time).
+Assignments are always due at 23:59 on some Tuesday (Singapore time).
 Late submissions will incur a penalty of 1 mark per hour.
 
 ## General Advice
