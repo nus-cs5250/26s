@@ -5,7 +5,7 @@
       Please read the [general instructions](../index.md) first.
 
       Part A of the assignment is due **23:59 on 17 Feb 2026**.
-      Part B of the assignment is due **23:59 on 10 Feb 2026**.
+      Part B of the assignment is due **23:59 on 17 Feb 2026**.
       Late submissions will lose **1 mark per hour**.
 
 !!! info
