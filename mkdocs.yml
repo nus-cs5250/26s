@@ -47,12 +47,13 @@ nav:
       - asg1/task-vm.md
       - asg1/task-kbuild.md
       - asg1/task-boot.md
-  # - Assignment 2:
-  #     - asg2/index.md
-  #     - asg2/task-browsing.md
-  #     - asg2/task-gdb.md
-  #     - asg2/task-module.md
-  #     - asg2/task-syscall.md
+  - Assignment 2:
+      - asg2/index.md
+      - asg2/task-browsing.md
+      - asg2/task-gdb.md
+      - asg2/task-module.md
+      - asg2/task-ai-interrupt.md
+      # - asg2/task-syscall.md
   # - Assignment 3:
   #     - asg3/index.md
   #     - asg3/task-kprobe.md

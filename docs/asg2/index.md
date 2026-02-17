@@ -88,7 +88,7 @@ The Makefile should include **two additional** targets beyond those in the previ
    $ sudo make rmmod
    ```
 
-### [Task 3: Creating a New System Call](task-syscall.md)
+<!-- ### [Task 3: Creating a New System Call](task-syscall.md)
 
 **Question 10 (8 marks):**
 Please provide the patch file for the changes you made to the kernel source code to create the new system call.
@@ -97,14 +97,14 @@ The patch file should have suffix `.patch` and adhere to the following requireme
 - The patch file must be able to be applied to the v6.13 version of the kernel source code without any errors.
   If the patch file cannot be applied, you will receive zero marks for this question.
 - The patched kernel must be able to compile without any errors.
-  If the patched kernel cannot compile, you will receive zero marks for this question.
+  If the patched kernel cannot compile, you will receive zero marks for this question. -->
 
-**Question 11 (4 marks):**
+<!-- **Question 11 (4 marks):**
 Please provide the source code for your user-mode program in a C file.
 This program should take the PID of a process as input, invoke the new system call you created, and output the PIDs of all its children, one per line.
-Please ensure that the program compiles without error.
+Please ensure that the program compiles without error. -->
 
-### [Task 4: AI-Assisted Interrupt Code Navigation](task-ai-interrupt.md)
+### [Task 3: AI-Assisted Interrupt Code Navigation](task-ai-interrupt.md)
 
 **Question 12 (ungraded):**
 Use AI tools to browse the Linux source tree and recover the interrupt-related function flow for `X86_TRAP_NMI`, from `trap_init()` to `__handle_irq_event_percpu()`.
