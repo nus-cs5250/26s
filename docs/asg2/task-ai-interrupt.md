@@ -187,9 +187,8 @@ which then drive periodic time accounting and scheduled timer callbacks.
 
 Use AI tools plus source reading to recover the complete interrupt-related function path for this scope:
 
-- Start function: `trap_init()`
+- Start function (init/main.c): `trap_init()`
 - Target vector: `X86_TRAP_NMI`
-- End function: `__handle_irq_event_percpu()`
 
 You must identify relevant functions on this path and explain each function's concrete role with source evidence.
 
@@ -201,15 +200,12 @@ Create `answers/task0-ai-interrupt.md` with:
 At least 3 prompts used for AI-assisted code navigation.
 
 2. `Verified Function Path`
-A function chain from `trap_init()` to `__handle_irq_event_percpu()` (at least 8 steps), each with evidence in `file#Lline` format.
+A function chain from `trap_init()` to end (at least 8 steps)
 
 3. `Function Notes`
 For every function in your chain, write 1-3 sentences about what it does in this specific flow.
 
-4. `Claim Verification`
-At least 2 AI claims manually checked and labeled as correct/incorrect/partially correct, with source evidence.
-
-5. `Short Summary`
+4. `Short Summary`
 No more than 250 words summarizing the whole flow in your own words.
 
 ### Rules
@@ -218,8 +214,3 @@ No more than 250 words summarizing the whole flow in your own words.
 2. You must verify all key claims from source code.
 3. Do not submit AI-generated code.
 
-### Suggested commands
-
-- `rg "trap_init|X86_TRAP_NMI|nmi|set_intr_gate|idt_setup" arch/x86 kernel include`
-- `rg "__handle_irq_event_percpu|handle_irq_event|irq_desc|irqaction" arch/x86 kernel include`
-- `rg "DECLARE_IDTENTRY|DEFINE_IDTENTRY|exc_nmi|asm_exc_nmi" arch/x86 include`
