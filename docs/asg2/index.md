@@ -55,7 +55,7 @@ understand exceptions and interrupt.
 **Question 5 (8 marks):**
 Use AI tools to browse the Linux source tree and recover the interrupt-related function flow for `X86_TRAP_NMI`, from `trap_init()` to `__handle_irq_event_percpu()`.
 Your answer must include prompt logs, a verified function path, function-level notes, and explicit claim checks with file/line evidence.
-Please follow the detailed requirements in [Task 4](task-ai-interrupt.md).
+Please follow the detailed requirements in [Task 2](task-ai-interrupt.md).
 
 ### [Task 3: Developing a Kernel Module](task-module.md)
 
