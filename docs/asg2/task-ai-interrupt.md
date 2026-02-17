@@ -183,7 +183,7 @@ Timer events are a canonical interrupt-driven workload.
 Architecture entry and generic IRQ dispatch eventually connect to timer framework callbacks,
 which then drive periodic time accounting and scheduled timer callbacks.
 
-## Assignment: Use AI to recover the NMI-related function flow
+## Task: Use AI to recover the NMI-related function flow
 
 Use AI tools plus source reading to recover the complete interrupt-related function path for this scope:
 
@@ -194,7 +194,7 @@ You must identify relevant functions on this path and explain each function's co
 
 ### Required output
 
-Create `answers/task0-ai-interrupt.md` with:
+Create `answers/task4-ai-interrupt.md` with:
 
 1. `Prompt Log`
 At least 3 prompts used for AI-assisted code navigation.
