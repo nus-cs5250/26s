@@ -45,16 +45,15 @@ The saved EIP/RIP points to the faulting instruction, so execution may retry tha
 A **trap** is reported after instruction completion.
 The saved EIP/RIP points to the next instruction after the one that caused the trap (e.g., debug trap).
 
-!!! question: interrupt terminology
+!!! question "Interrupt terminology"
+    For each item, think about which labels apply: `Exception`, `Interrupt`, `Maskable`, `Nonmaskable`, `Trap`, `Fault`.
 
-For each item, think about which labels apply: `Exception`, `Interrupt`, `Maskable`, `Nonmaskable`, `Trap`, `Fault`.
-
-- Watchdog
-- Demand paging
-- Division by zero
-- Timer
-- System call
-- Breakpoint
+    - Watchdog
+    - Demand paging
+    - Division by zero
+    - Timer
+    - System call
+    - Breakpoint
 
 ## Hardware Concepts
 
@@ -183,14 +182,13 @@ Timer events are a canonical interrupt-driven workload.
 Architecture entry and generic IRQ dispatch eventually connect to timer framework callbacks,
 which then drive periodic time accounting and scheduled timer callbacks.
 
-!!! question: Use AI to recover the NMI-related function flow
+!!! question "Use AI to recover the NMI-related function flow"
+    Use AI tools plus source reading to recover the complete interrupt-related function path for this scope:
 
-Use AI tools plus source reading to recover the complete interrupt-related function path for this scope:
+    - Start function (init/main.c): `trap_init()`
+    - Target vector: `X86_TRAP_NMI`
 
-- Start function (init/main.c): `trap_init()`
-- Target vector: `X86_TRAP_NMI`
-
-You must identify relevant functions on this path and explain each function's concrete role with source evidence.
+    You must identify relevant functions on this path and explain each function's concrete role with source evidence.
 
 ### Required output
 
@@ -213,4 +211,3 @@ No more than 250 words summarizing the whole flow in your own words.
 1. AI may help search/summarize/propose candidate paths.
 2. You must verify all key claims from source code.
 3. Do not submit AI-generated code.
-
