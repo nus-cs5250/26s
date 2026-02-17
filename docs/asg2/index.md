@@ -47,9 +47,19 @@ Is this procedure similar to how `execve` works?
 Does a context switch occur, similar to what happens during a `syscall`?
 Please explain your observation briefly.
 
-### [Task 2: Developing a Kernel Module](task-module.md)
+### [Task 2: AI-Assisted Interrupt Code Navigation](task-ai-interrupt.md)
 
-**Question 4 (2 marks):**
+**Question 4 (4 marks):**
+understand exceptions and interrupt.
+
+**Question 5 (8 marks):**
+Use AI tools to browse the Linux source tree and recover the interrupt-related function flow for `X86_TRAP_NMI`, from `trap_init()` to `__handle_irq_event_percpu()`.
+Your answer must include prompt logs, a verified function path, function-level notes, and explicit claim checks with file/line evidence.
+Please follow the detailed requirements in [Task 4](task-ai-interrupt.md).
+
+### [Task 3: Developing a Kernel Module](task-module.md)
+
+**Question 6 (2 marks):**
 Identify the file and line number where the `module_init` macro is defined **for our scenario**.
 
 Please give your answer in the format `file#L1234`.
@@ -57,23 +67,23 @@ For example, if it were defined in
 [kernel/sched/core.c](https://elixir.bootlin.com/linux/v6.13/source/kernel/sched/core.c#L6636)
 at line 6636, you should refer to it as `kernel/sched/core.c#L6636`.
 
-**Question 5 (2 marks):**
+**Question 7 (2 marks):**
 Why is `printk` used instead of `printf` within kernel modules?
 
-**Question 6 (2 marks):**
+**Question 8 (2 marks):**
 Did you observe the output "Greetings from xxx" when you loaded the module?
 If not, is this string compiled into the module?
 Please explain your observation briefly.
 
-**Question 7 (2 marks):**
+**Question 9 (2 marks):**
 Modify the Makefile, if necessary, to make the message compiled into the module.
 
-**Question 8 (4 marks):**
+**Question 10 (4 marks):**
 Submit the source code for your kernel module.
 The module shall accept two parameters and output the process ID and executable name for the given PID.
 Ensure that the module compiles without errors using the Makefile and that it can be loaded and unloaded without any error.
 
-**Question 9 (3 marks):**
+**Question 11 (3 marks):**
 Submit the Makefile that builds and loads the kernel module.
 The Makefile should include **two additional** targets beyond those in the previously provided Makefile.
 
@@ -103,13 +113,6 @@ The patch file should have suffix `.patch` and adhere to the following requireme
 Please provide the source code for your user-mode program in a C file.
 This program should take the PID of a process as input, invoke the new system call you created, and output the PIDs of all its children, one per line.
 Please ensure that the program compiles without error. -->
-
-### [Task 3: AI-Assisted Interrupt Code Navigation](task-ai-interrupt.md)
-
-**Question 12 (ungraded):**
-Use AI tools to browse the Linux source tree and recover the interrupt-related function flow for `X86_TRAP_NMI`, from `trap_init()` to `__handle_irq_event_percpu()`.
-Your answer must include prompt logs, a verified function path, function-level notes, and explicit claim checks with file/line evidence.
-Please follow the detailed requirements in [Task 4](task-ai-interrupt.md).
 
 ### Submission Guidelines
 

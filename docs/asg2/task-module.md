@@ -1,4 +1,4 @@
-# Task 2: Developing a Kernel Module
+# Task 3: Developing a Kernel Module
 
 A kernel module is a program that can be dynamically loaded and unloaded into the kernel on demand.
 This allows for the extension of kernel functionality without requiring the rebuilding of the kernel or system reboot.

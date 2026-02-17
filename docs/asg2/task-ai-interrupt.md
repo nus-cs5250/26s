@@ -1,4 +1,4 @@
-# Task 3: AI-Assisted Linux Interrupt Understanding
+# Task 2: AI-Assisted Linux Interrupt Understanding
 
 ## What is an interrupt?
 
