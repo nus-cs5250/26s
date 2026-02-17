@@ -1,4 +1,4 @@
-# Task 0: AI-Assisted Linux Interrupt Reading
+# Task 3: AI-Assisted Linux Interrupt Reading
 
 ## What is an interrupt?
 
@@ -100,6 +100,88 @@ This can be done at multiple levels:
 
 Most architectures support interrupt priorities.
 When enabled, nested interrupts are typically allowed only for interrupts with higher priority than the current priority level.
+
+## Interrupt handling on x86 architecture
+
+### Interrupt Descriptor Table (IDT)
+
+On x86, each interrupt/exception vector maps to an IDT entry (gate).
+The IDT is used by the CPU as a jump table to find the corresponding handler.
+
+Key points:
+
+- vector space has 256 entries
+- low vectors are generally reserved for exceptions
+- a dedicated vector is used for the syscall interface
+- the CPU locates the IDT via `IDTR`
+
+### Gate types and handler address
+
+Common x86 gate types:
+
+- interrupt gate: enters handler and clears IF (maskable interrupts disabled)
+- trap gate: enters handler without clearing IF
+- task gate: generally not used in Linux fast-path interrupt handling
+
+Handler target is computed from segment selector + offset fields in the gate descriptor.
+
+### Interrupt stack frame and return
+
+On entry, CPU saves execution state on stack (e.g., flags and return address fields).
+Some exceptions also push an error code.
+
+On return, x86 uses `iret/iretq` to restore saved state and resume interrupted execution.
+If privilege level changed on entry, return also restores prior privilege/stack context.
+
+### High-level request handling sequence
+
+When an interrupt/exception is taken, CPU performs a sequence that includes:
+
+1. checking privilege transition needs
+2. switching stack if required
+3. saving return state
+4. transferring control to the selected handler
+
+## Interrupt handling in Linux
+
+Linux handling is often explained in phases:
+
+1. critical entry/dispatch phase
+2. immediate device-handler phase
+3. deferred phase for non-urgent work
+
+In early phases, local interrupt state is tightly controlled to protect critical handling.
+Later, deferred execution improves latency and throughput.
+
+### Interrupt context
+
+Code running between interrupt entry and return is in interrupt context.
+Important properties:
+
+- not associated with a normal user process context
+- should not sleep or perform operations that require scheduling
+- should keep work short and deterministic
+
+### Shared interrupts and generic dispatch
+
+One IRQ line may be shared by multiple devices.
+Generic IRQ code dispatches the line to registered actions (`irqaction`) under descriptor control (`irq_desc`).
+This is where handler chains and per-line flow handlers are coordinated.
+
+### Deferrable work
+
+Linux defers non-critical work out of hard IRQ handling.
+Common mechanisms include:
+
+- softirq/tasklet style bottom-half execution
+- threaded interrupt handlers
+- workqueues (process context)
+
+### Timers
+
+Timer events are a canonical interrupt-driven workload.
+Architecture entry and generic IRQ dispatch eventually connect to timer framework callbacks,
+which then drive periodic time accounting and scheduled timer callbacks.
 
 ## Assignment: Use AI to recover the NMI-related function flow
 
