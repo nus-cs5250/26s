@@ -17,7 +17,7 @@
 
 !!! info
 
-    Throughout this assignment, you will be working with the Linux kernel version 6.13.
+    Throughout this assignment, you will be working with the Linux kernel version 6.18.
     Please start with the default configuration and make the following two features enabled:
 
     - Kernel hacking
@@ -64,7 +64,7 @@ Identify the file and line number where the `module_init` macro is defined **for
 
 Please give your answer in the format `file#L1234`.
 For example, if it were defined in
-[kernel/sched/core.c](https://elixir.bootlin.com/linux/v6.13/source/kernel/sched/core.c#L6636)
+[kernel/sched/core.c](https://elixir.bootlin.com/linux/v6.18/source/kernel/sched/core.c#L6636)
 at line 6636, you should refer to it as `kernel/sched/core.c#L6636`.
 
 **Question 7 (2 marks):**
@@ -104,7 +104,7 @@ The Makefile should include **two additional** targets beyond those in the previ
 Please provide the patch file for the changes you made to the kernel source code to create the new system call.
 The patch file should have suffix `.patch` and adhere to the following requirements:
 
-- The patch file must be able to be applied to the v6.13 version of the kernel source code without any errors.
+- The patch file must be able to be applied to the v6.18 version of the kernel source code without any errors.
   If the patch file cannot be applied, you will receive zero marks for this question.
 - The patched kernel must be able to compile without any errors.
   If the patched kernel cannot compile, you will receive zero marks for this question. -->
