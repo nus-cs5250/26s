@@ -192,7 +192,7 @@ which then drive periodic time accounting and scheduled timer callbacks.
 
 ### Required output
 
-Create `answers/task4-ai-interrupt.md` with:
+Create `task2/interrupt_flow.md` with:
 
 1. `Prompt Log`
 At least 3 prompts used for AI-assisted code navigation.
