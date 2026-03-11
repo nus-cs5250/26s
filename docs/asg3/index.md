@@ -84,7 +84,7 @@ If multiple solutions are suggested, choose ONLY one of them to discuss.
 ### Submission Guidelines
 
 Please accept the assignment on GitHub Classroom first.
-The invitation link is available on [Canvas](https://canvas.nus.edu.sg/courses/70149/assignments/173562).
+The invitation link is available on [Canvas](https://canvas.nus.edu.sg/courses/85677/assignments/243662).
 Then, proceed to complete the tasks and push your work to GitHub accordingly.
 
 Refer to the submission guidelines in [Assignment 1](../asg1/index.md#submission-guidelines) for the remaining instructions.
@@ -96,4 +96,4 @@ Refer to the submission guidelines in [Assignment 1](../asg1/index.md#submission
 
 ## Part B (15 marks)
 
-Please complete the quiz [Assignment 3 (Part B)](https://canvas.nus.edu.sg/courses/70149/assignments/171201) on Canvas.
+Please complete the quiz [Assignment 3 (Part B)](https://canvas.nus.edu.sg/courses/85677/quizzes/81390) on Canvas.
