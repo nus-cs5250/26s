@@ -8,9 +8,7 @@ Tentatively, we will follow the schedule below.
 | [Assignment 1](./asg1/index.md) | Wed, 21 Jan 2026 | Tues, 17 Feb 2026 |
 | [Assignment 2](./asg2/index.md) | Tues, 17 Feb 2026 | Tues, 10 Mar 2026 |
 | [Assignment 3](./asg3/index.md) | Tues, 10 Mar 2026 | Sunday, 5 Apr 2026 |
-<!-- | [Assignment 2](./asg2/index.md) | Mon, 10 Feb 2025 | Mon, 3 Mar 2025  |
-| [Assignment 3](./asg3/index.md) | Mon, 3 Mar 2025  | Mon, 31 Mar 2025 |
-| [Assignment 4](./asg4/index.md) | Mon, 31 Mar 2025 | Mon, 21 Apr 2025 | -->
+| [Assignment 4](./asg4/index.md) | Sunday, 5 Apr 2026 | Sunday, 26 Apr 2026 |
 
 The maximum score for an assignment is 50 marks.
 Each assignment will have two parts, i.e.,
